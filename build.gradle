@@ -14,7 +14,11 @@ buildscript {
 
 apply plugin: 'org.asciidoctor.convert'
 
-version '1.0.2'
+version '1.0.3'
+
+asciidoctor {
+    attributes 'source-highlighter': 'coderay'
+}
 
 task('publishDocs', dependsOn: asciidoctor, group: 'release', description: 'Adds the new version of the docs to github pages') << {
     def workingDir = project.file("${project.buildDir}/gh-pages")
