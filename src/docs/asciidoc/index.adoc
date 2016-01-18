@@ -9,4 +9,4 @@ An introduction to http://asciidoc.org[AsciiDoc].
 * item 2
 
 [source,java]
-System.out.println(puts "Hello, World! Butts");
+System.out.println("Banana!");
